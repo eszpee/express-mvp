@@ -45,6 +45,6 @@ Source code: https://github.com/buzz-software/expressjs-mvp-landing-page
 ## Sequelize
  - `npm install sequelize --save; npm install pg --save;` to install with Postgresql driver;
  - `npm install sequelize-cli -g` - CLI for Sequelize
- - `touch ./.sequelizerc` for initial paths (see [.sequelizerc].)
+ - `touch ./.sequelizerc` for initial paths (see [.sequelizerc](.sequelizerc).)
 
 
