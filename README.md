@@ -42,9 +42,13 @@ Source code: https://github.com/buzz-software/expressjs-mvp-landing-page
  - `psql postgres` - connects to DB from CLI, to create user, list dbs, etc.
  - `CREATE ROLE "username" WITH LOGIN PASSWORD 'password;'` to create user; `CREATE DATABASE "sampledb";` to create database. (DROP ROLE or DROP DATABASE deletes.)
  
-## Sequelize
- - `npm install sequelize --save; npm install pg --save;` to install with Postgresql driver;
- - `npm install sequelize-cli -g` - CLI for Sequelize
- - `touch ./.sequelizerc` for initial paths (see [.sequelizerc](.sequelizerc).)
-
+## Sequelize 
+ - Install:
+   - `npm install sequelize --save; npm install pg --save;` to install with Postgresql driver;
+   - `npm install sequelize-cli -g` - CLI for Sequelize
+   - `touch ./.sequelizerc` for initial paths (see [.sequelizerc](.sequelizerc).)
+   - `sequelize init` to create config and other JS files.
+ - Files under `migrations` are recipes to create/drop tables, so you can describe data structure in code. They are run by filename ABC order, so filenames are datetime-something.js.
+   - Run up: `sequelize db:migrate`
+   - Run down: `sequelize db:migrate:undo`
 
