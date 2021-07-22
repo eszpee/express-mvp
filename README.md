@@ -6,6 +6,8 @@ Source code: https://github.com/buzz-software/expressjs-mvp-landing-page
  - [Express.js](https://expressjs.com) - Node web framework
  - [Pug.js](https://pugjs.org/) - Simple HTML templating system
  - [Nodemon](https://www.npmjs.com/package/nodemon) - Automatically reloads node app in case of source code change
+ - [Postgresql](https://www.postgresql.org/) - DB
+ - [Sequelize ORM](https://sequelize.org/) - Object-relational Mapping module 
 
 
 # Notes
@@ -23,9 +25,6 @@ Source code: https://github.com/buzz-software/expressjs-mvp-landing-page
  - /bin/www app initialization
  - /app.js main app
  
-## Pug.js
- - fdfd
- 
 ## Git
  - Current folder to local and remote git:
  ```
@@ -37,3 +36,15 @@ Source code: https://github.com/buzz-software/expressjs-mvp-landing-page
  $ git commit -a -m "Initial commit."
  $ git remote add github https://github.com/eszpee/reponame.git
   ```
+## Postgresql
+ - Install: `brew install postgresql`
+ - Start: `brew services start postgresql`
+ - `psql postgres` - connects to DB from CLI, to create user, list dbs, etc.
+ - `CREATE ROLE "username" WITH LOGIN PASSWORD 'password;'` to create user; `CREATE DATABASE "sampledb";` to create database. (DROP ROLE or DROP DATABASE deletes.)
+ 
+## Sequelize
+ - `npm install sequelize --save; npm install pg --save;` to install with Postgresql driver;
+ - `npm install sequelize-cli -g` - CLI for Sequelize
+ - `touch ./.sequelizerc` for initial paths (see [.sequelizerc].)
+
+
