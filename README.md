@@ -30,6 +30,7 @@ Source code: https://github.com/buzz-software/expressjs-mvp-landing-page
  - Current folder to local and remote git:
  ```
  $ git init-db
+ $ git branch -m main
  $ touch .gitignore
  $ echo 'node_modules' >> .gitignore
  $ git add .
