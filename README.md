@@ -2,7 +2,7 @@
 Express mvp based on https://getbuzz.io/c/learning-expressjs/stories/Learn-how-to-develop-a-NodeJS-application-4007962439.
 Source code: https://github.com/buzz-software/expressjs-mvp-landing-page
 
-Video completed until *50:30*
+Video completed until *1:34:00*
 
 ## Technologies
  - [Express.js](https://expressjs.com) - Node web framework
