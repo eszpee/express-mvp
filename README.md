@@ -10,6 +10,8 @@ Video completed until *1:34:00*
  - [Nodemon](https://www.npmjs.com/package/nodemon) - Automatically reloads node app in case of source code change
  - [Postgresql](https://www.postgresql.org/) - DB
  - [Sequelize ORM](https://sequelize.org/) - Object-relational Mapping module 
+ - [Passport.js](http://www.passportjs.org/) - Authentication for Node
+
 
 
 # Notes
