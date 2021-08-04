@@ -43,6 +43,10 @@ Source code: https://github.com/buzz-software/expressjs-mvp-landing-page
  - Start: `brew services start postgresql`
  - `psql postgres` - connects to DB from CLI, to create user, list dbs, etc.
  - `CREATE ROLE "username" WITH LOGIN PASSWORD 'password;'` to create user; `CREATE DATABASE "sampledb";` to create database. (DROP ROLE or DROP DATABASE deletes.)
+ - `\l+` - shows databases; `\c dbname` - connects to dbname database; `\dt` - shows tables.
+ - Sample SQLs:
+    - `SELECT "id", "username", "firstname", "lastname", "password", "email", "is_admin", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = '6ad2bba8-0853-4e99-8eb7-b9e7994ef2c3';`
+    - `UPDATE "Users" AS "User" SET "is_admin" = true WHERE "User"."id" = '6ad2bba8-0853-4e99-8eb7-b9e7994ef2c3';`
  
 ## Sequelize 
  - Install:
